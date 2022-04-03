@@ -33,6 +33,7 @@ input, button{
     margin: 0.5rem auto;
 }
 .conv{
+    width: 100%;
     border: 1px solid var(--primary);
     padding: 1rem;
     border-radius: 0.5rem;
