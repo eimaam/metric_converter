@@ -11,17 +11,18 @@
 </head>
 <body>
     <div id="container">
-        <div>
+        <div class="flexCol">
             <input type="number" id="primary" placeholder="Enter a Value">
-            <button onclick="solve()">GO!</button>
+            <button id="solve" onclick="solve()">SOLVE!</button>
+            <i>NOTE: Values are all converted to the nearest whole number</i>
         </div>
         <div class="conv">
             <div class="conv1">
                 <div class="conv-detail">
-                    <h3>Length (Kilometer to Meter)</h3>
+                    <h3>Length: (Kilometer to Meter)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="converted">0</p>
+                            <p id="val">0</p>
                             <p>Kilogram</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -33,61 +34,61 @@
                 </div>
     
                 <div class="conv-detail">
-                    <h3>Length (Kilometer to Meter)</h3>
+                    <h3>Length: (Centimeter to Meter)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Kilogram</p>
+                            <p id="val">0</p>
+                            <p>Centimeter</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
                             <p id="converted">0</p>
-                            <p>Miles</p>
+                            <p>Meter</p>
                         </div>
                     </div>
                 </div>
     
                 <div class="conv-detail">
-                    <h3>Kilogram to Miles</h3>
+                    <h3>Length: (Feet to Inches)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Kilogram</p>
+                            <p id="val">0</p>
+                            <p>Feet</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
                             <p id="converted">0</p>
-                            <p>Miles</p>
+                            <p>Inches</p>
                         </div>
                     </div>
                 </div>
     
                 <div class="conv-detail">
-                    <h3>Kilogram to Miles</h3>
+                    <h3>Temperature: (Celcius to Kelvin)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Kilogram</p>
+                            <p id="val">0</p>
+                            <p>Celcius</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
                             <p id="converted">0</p>
-                            <p>Miles</p>
+                            <p>Kelvin</p>
                         </div>
                     </div>
                 </div>
     
                 <div class="conv-detail">
-                    <h3>Kilogram to Miles</h3>
+                    <h3>Temperature: (Fahrenheit to Celcius)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Kilogram</p>
+                            <p id="val">0</p>
+                            <p>Fahrenheit</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
                             <p id="converted">0</p>
-                            <p>Miles</p>
+                            <p>Celcius</p>
                         </div>
                     </div>
                 </div>
@@ -95,81 +96,83 @@
             <!-- SECOND Section -->
             <div class="conv1">
                 <div class="conv-detail">
-                    <h3>Temperature (Degree to Kelvin)</h3>
+                    <h3>Volume: (Liter to Milliliter)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Kilogram</p>
+                            <p id="val">0</p>
+                            <p>Liter</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
                             <p id="converted">0</p>
-                            <p>Miles</p>
+                            <p>Milliliter</p>
                         </div>
                     </div>
                 </div>
     
                 <div class="conv-detail">
-                    <h3>Kilogram to Miles</h3>
+                    <h3>Weight: (Pounds to Kilogram)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Kilogram</p>
+                            <p id="val">0</p>
+                            <p>Pounds</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
                             <p id="converted">0</p>
-                            <p>Miles</p>
+                            <p>Kilogram</p>
                         </div>
                     </div>
                 </div>
     
                 <div class="conv-detail">
-                    <h3>Kilogram to Miles</h3>
+                    <h3>Power: (Joules to Watts)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Kilogram</p>
+                            <p id="val">0</p>
+                            <p>Joules(J)</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
                             <p id="converted">0</p>
-                            <p>Miles</p>
+                            <p>Watt(W)</p>
                         </div>
                     </div>
                 </div>
     
                 <div class="conv-detail">
-                    <h3>Kilogram to Miles</h3>
+                    <h3>Area: (Square Feet to Square Meters)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Kilogram</p>
+                            <p id="val">0</p>
+                            <p>Square Feet</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
                             <p id="converted">0</p>
-                            <p>Miles</p>
+                            <p>Squre Meters</p>
                         </div>
                     </div>
                 </div>
     
                 <div class="conv-detail">
-                    <h3>Kilogram to Miles</h3>
+                    <h3>Speed: (Mach to Knots)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Kilogram</p>
+                            <p id="val">0</p>
+                            <p>Mach</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
                             <p id="converted">0</p>
-                            <p>Miles</p>
+                            <p>Knot</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <p>More Conversions to be added in future update!</p>
+
     </div>
     
 

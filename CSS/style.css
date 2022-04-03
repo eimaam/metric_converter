@@ -16,23 +16,32 @@ body{
     background-color: var(--bgColor);
     width: 50%;
     padding: 1rem;
-    margin: auto;
+    margin: 5vh auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
 }
 .flex{
     display: flex;
     gap: 1rem;
     align-items: center;
 }
+.flexCol{
+    display: flex;
+    gap: 0.1rem;
+    flex-direction: column;
+    align-items: center;
+}
 input, button{
-    width: 100%;
+    margin: 0.5rem auto;
     padding: 1rem;
     border-radius: 0.5rem;
     border: 0;
-    margin: 0.5rem auto;
 }
 .conv{
+    margin: auto;
     width: 100%;
     border: 1px solid var(--primary);
     padding: 1rem;
