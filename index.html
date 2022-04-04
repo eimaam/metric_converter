@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="CSS/fontawesome/css/all.css">
 </head>
 <body>
+
     <div id="container">
         <div class="flexCol">
-            <input type="number" id="primary" placeholder="Enter a Value">
-            <button id="solve" onclick="solve()">SOLVE!</button>
+            <h1>METRIC CONVERTER</h1>
+            <input type="number" id="primary" placeholder="Enter a Value" onchange="solve()">
+            <button id="btn">GO!</button>
             <i>NOTE: Values are all converted to the nearest whole number</i>
         </div>
         <div class="conv">
@@ -22,13 +24,13 @@
                     <h3>Length: (Kilometer to Meter)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="val">0</p>
-                            <p>Kilogram</p>
+                            <p class="val">0</p>
+                            <p>Kilometer</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Miles</p>
+                            <p id="res1">0</p>
+                            <p>Meter</p>
                         </div>
                     </div>
                 </div>
@@ -37,12 +39,12 @@
                     <h3>Length: (Centimeter to Meter)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="val">0</p>
+                            <p class="val">0</p>
                             <p>Centimeter</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
-                            <p id="converted">0</p>
+                            <p id="res2">0</p>
                             <p>Meter</p>
                         </div>
                     </div>
@@ -52,7 +54,7 @@
                     <h3>Length: (Feet to Inches)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="val">0</p>
+                            <p class="val">0</p>
                             <p>Feet</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -67,7 +69,7 @@
                     <h3>Temperature: (Celcius to Kelvin)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="val">0</p>
+                            <p class="val">0</p>
                             <p>Celcius</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -82,7 +84,7 @@
                     <h3>Temperature: (Fahrenheit to Celcius)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="val">0</p>
+                            <p class="val">0</p>
                             <p>Fahrenheit</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -99,7 +101,7 @@
                     <h3>Volume: (Liter to Milliliter)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="val">0</p>
+                            <p class="val">0</p>
                             <p>Liter</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -114,7 +116,7 @@
                     <h3>Weight: (Pounds to Kilogram)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="val">0</p>
+                            <p class="val">0</p>
                             <p>Pounds</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -129,7 +131,7 @@
                     <h3>Power: (Joules to Watts)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="val">0</p>
+                            <p class="val">0</p>
                             <p>Joules(J)</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -144,7 +146,7 @@
                     <h3>Area: (Square Feet to Square Meters)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="val">0</p>
+                            <p class="val">0</p>
                             <p>Square Feet</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -159,7 +161,7 @@
                     <h3>Speed: (Mach to Knots)</h3>
                     <div class="flex">
                         <div class="result">
-                            <p id="val">0</p>
+                            <p class="val">0</p>
                             <p>Mach</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -176,11 +178,11 @@
     </div>
     
 
-
-
-
-
-
     <script src="script.js"></script>
+
+
+
+
+
 </body>
 </html>
