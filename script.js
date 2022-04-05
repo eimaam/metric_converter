@@ -1,6 +1,4 @@
-var myButton = document.getElementById("btn");
-myButton.addEventListener("click", displayValue);
-myButton.addEventListener("click", convert);
+
 
 var main = document.getElementById("primary");
 
@@ -32,16 +30,16 @@ function convert(){
         // taking values using empty array and using the push method to add values to the array
         // And returns res which marks a stop to the function
         var res =[]
-        res.push(main.value*1000);
-        res.push(main.value/100);
-        res.push(main.value*12);
-        res.push(main.value*(1)+273.15);
-        res.push((main.value-32)*(5/9));
-        res.push(main.value*1000);
-        res.push(main.value*0.454);
-        res.push(main.value*10000000);
-        res.push(main.value*0.092903);
-        res.push(main.value*666.739);
+        res.push(Math.floor(main.value*1000));
+        res.push(Math.floor((main.value)*1/100));
+        res.push(Math.floor(main.value*12));
+        res.push(Math.floor(main.value*(1)+273.15));
+        res.push(Math.floor((main.value-32)*(5/9)));
+        res.push(Math.floor(main.value*1000));
+        res.push(Math.floor(main.value*0.454));
+        res.push(Math.floor(main.value*10000000));
+        res.push(Math.floor(main.value*0.092903));
+        res.push(Math.floor(main.value*666.739));
         return res;
     }
     // calling on the array and assigning/displaying it to respective push values declared above using DOM
