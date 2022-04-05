@@ -14,7 +14,7 @@
     <div id="container">
         <div class="flexCol">
             <h1>METRIC CONVERTER</h1>
-            <input type="number" id="primary" placeholder="Enter a Value" onchange="solve()">
+            <input type="number" id="primary" placeholder="Enter a Value" onchange="displayValue(), convert()">
             <button id="btn">GO!</button>
             <i>NOTE: Values are all converted to the nearest whole number</i>
         </div>
@@ -59,7 +59,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
-                            <p id="converted">0</p>
+                            <p id="res3">0</p>
                             <p>Inches</p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
-                            <p id="converted">0</p>
+                            <p id="res4">0</p>
                             <p>Kelvin</p>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
-                            <p id="converted">0</p>
+                            <p id="res5">0</p>
                             <p>Celcius</p>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
-                            <p id="converted">0</p>
+                            <p id="res6">0</p>
                             <p>Milliliter</p>
                         </div>
                     </div>
@@ -117,18 +117,18 @@
                     <div class="flex">
                         <div class="result">
                             <p class="val">0</p>
-                            <p>Pounds</p>
+                            <p>Pounds(lb)</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Kilogram</p>
+                            <p id="res7">0</p>
+                            <p>Kilogram(kg)</p>
                         </div>
                     </div>
                 </div>
     
                 <div class="conv-detail">
-                    <h3>Power: (Joules to Watts)</h3>
+                    <h3>Power: (Joules to Kilowatt-Hours)</h3>
                     <div class="flex">
                         <div class="result">
                             <p class="val">0</p>
@@ -136,8 +136,8 @@
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Watt(W)</p>
+                            <p id="res8">0</p>
+                            <p>Ergs(ergs)</p>
                         </div>
                     </div>
                 </div>
@@ -147,12 +147,12 @@
                     <div class="flex">
                         <div class="result">
                             <p class="val">0</p>
-                            <p>Square Feet</p>
+                            <p>Square Feet (sq.ft.)</p>
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
-                            <p id="converted">0</p>
-                            <p>Squre Meters</p>
+                            <p id="res9">0</p>
+                            <p>Squre Meters (m<sup>2</sup>)</p>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                         <div class="result">
-                            <p id="converted">0</p>
+                            <p id="res10">0</p>
                             <p>Knot</p>
                         </div>
                     </div>

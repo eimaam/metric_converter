@@ -59,9 +59,13 @@ input, button{
     color: var(--main);
     border-radius: 0.5rem;
     padding: 0.5rem;
-    min-width: 10rem;
+    width: 11rem;
     height: auto;
+    word-wrap: break-word;
 }
 p{
     margin: 0;
+}
+@media only screen and (max-width: 480px){
+
 }
